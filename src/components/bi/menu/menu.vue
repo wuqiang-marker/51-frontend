@@ -290,12 +290,19 @@ export default {
     changeMenu(menuIndex) {
       this.menu = menuIndex;
       let menuRouter;
+      let poiIdData = [];
       switch (this.menu) {
         case 1: //城市管理
           menuRouter = "";
+          poiIdData = [
+            { id: "customPOI_ID_1" },
+            { id: "customPOI_ID_2" },
+            { id: "customPOI_ID_3" },
+          ];
           break;
         case 2: //城市管理
           menuRouter = "ContingencyManagement";
+          poiIdData = [{ id: "customPOI_ID_4" }];
           break;
         case 3: //经济运行
           menuRouter = "EconomicalOperation";
@@ -316,7 +323,10 @@ export default {
           menuRouter = "ActiveCircle";
           break;
       }
-      this.$router.push("/" + menuRouter);
+      this.$router.push({
+        path: "/" + menuRouter,
+        query: { data: poiIdData[poiIdData.length - 1] },
+      });
     },
   },
 };

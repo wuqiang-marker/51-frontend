@@ -935,9 +935,21 @@ export default {
       ],
     };
   },
-  mounted() {
-    this.makeLine();
-  },
+  // mounted() {
+  //   this.makeLine();
+  // },
+  // created() {
+  //   if (this.poiData.length > 0) {
+  //     this.poiData = this.$route.query.data.id;
+  //     console.log(this.poiData);
+  //   }
+  // },
+  // watch: {
+  //   poiData(newData, oldData) {
+  //     this.poiData = newName;
+  //     console.log(newData);
+  //   },
+  // },
   methods: {
     makeLine() {
       let myChart = this.$echarts.init(document.getElementById("cm-line"));

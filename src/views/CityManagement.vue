@@ -756,24 +756,24 @@ export default {
           contact: "13:01",
           remark: "已完成",
         },
-        // {
-        //   name: "12",
-        //   num: "民事纠纷",
-        //   contact: "13:01",
-        //   remark: "已完成",
-        // },
-        // {
-        //   name: "13",
-        //   num: "民事纠纷",
-        //   contact: "13:01",
-        //   remark: "已完成",
-        // },
-        // {
-        //   name: "14",
-        //   num: "民事纠纷",
-        //   contact: "13:01",
-        //   remark: "已完成",
-        // },
+        {
+          name: "12",
+          num: "民事纠纷",
+          contact: "13:01",
+          remark: "已完成",
+        },
+        {
+          name: "13",
+          num: "民事纠纷",
+          contact: "13:01",
+          remark: "已完成",
+        },
+        {
+          name: "14",
+          num: "民事纠纷",
+          contact: "13:01",
+          remark: "已完成",
+        },
       ],
       attractRightTableData: [
         {
@@ -803,12 +803,13 @@ export default {
           outPopulation: "200",
         },
       ],
+
       MyMarhq: "",
     };
   },
   mounted() {
     this.$nextTick(function () {
-      // this.init();
+      this.init();
       this.makeLine();
       this.makePie();
     });
@@ -1065,7 +1066,9 @@ export default {
     },
     init() {
       var that = this;
-      var newData = $(".tbody-box tbody").html($(".tbody-box tbody").html());
+      var newData = $(".tbody-box tbody").html(
+        $(".tbody-box tbody").html() + $(".tbody-box tbody").html()
+      );
 
       clearInterval(this.MyMarhq);
       if (that.attractTableData.length > 10) {
