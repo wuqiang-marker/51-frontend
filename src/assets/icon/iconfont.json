@@ -1,0 +1,93 @@
+{
+  "id": "1990071",
+  "name": "大屏",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5121489",
+      "name": "导航",
+      "font_class": "daohang",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "5383656",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e781",
+      "unicode_decimal": 59265
+    },
+    {
+      "icon_id": "4236632",
+      "name": "湿度",
+      "font_class": "shidu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "4562829",
+      "name": "晴",
+      "font_class": "qing",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "12331688",
+      "name": "温度",
+      "font_class": "wendu",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "13956656",
+      "name": "风力预测方案",
+      "font_class": "fengliyucefangan",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "14660510",
+      "name": "pm2.5感应器",
+      "font_class": "pm25ganyingqibeifen",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "132180",
+      "name": "电话",
+      "font_class": "telephone",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "700806",
+      "name": "短信",
+      "font_class": "duanxin",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "8842685",
+      "name": "铃铛",
+      "font_class": "lingdang",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "11760297",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "5905756",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    }
+  ]
+}

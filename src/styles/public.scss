@@ -1,0 +1,104 @@
+/* 公共样式 */
+//表格
+table {
+  width: 100%;
+  color: #fff;
+  border-collapse: separate;
+  border-spacing: 0 1vh;
+
+  .tr-color {
+    background-color: rgba(0, 169, 255, 0.4);
+  }
+
+  thead {
+    tr {
+      height: 2.8vh;
+
+      th {
+        color: #d2eaff;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: rgba(0, 169, 255, 0.21);
+      height: 3vh;
+
+      td {
+        text-align: center;
+      }
+    }
+  }
+}
+
+tbody {
+  tr:hover {
+    background: #f4b841;
+
+    td {
+      color: #000 !important;
+    }
+  }
+
+  tr {
+    td:nth-child(even) {
+      color: #00FBC6;
+    }
+
+    td:nth-child(odd) {
+      color: #fff;
+    }
+  }
+
+}
+
+//标题
+.title {
+  color: #fff;
+  padding: 0 1vh;
+  border-left: 0.1vh solid yellow;
+  border-right: 0.1vh solid yellow;
+  display: inline-block;
+}
+
+.wrapper-page {
+  width: 100%;
+  height: 100%;
+
+  .left-container {
+    float: left;
+    width: 22%;
+    height: 100%;
+    background-image: url("../assets/image/left-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .left-container-wrapper {
+      padding: 0 3vh;
+    }
+  }
+
+  .center-container {
+    float: left;
+    width: 56%;
+    height: 100%;
+    //完成后需要将左右间距改为 注释中的值
+    // margin-left: 2.5%;
+    // margin-right: 2.5%;
+
+  }
+
+  .right-container {
+    float: left;
+    width: 22%;
+    height: 100%;
+    background-image: url("../assets/image/right-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .right-container-wrapper {
+      padding: 0 3vh;
+    }
+  }
+}

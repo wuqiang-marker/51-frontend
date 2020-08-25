@@ -1,0 +1,186 @@
+.flex-h {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+@for $i from 1 through 12 {
+  .flex-#{$i} {
+    align-items: stretch;
+    flex-positive: #{$i};
+    flex-grow: #{$i};
+    flex: #{$i};
+    flex-shrink: 0;
+  }
+}
+
+@for $i from 1 through 6 {
+  // 左边距离
+  .margin-left-#{$i} {
+    margin-left: #{$margin * $i} !important;
+  } // 右边距离
+  .margin-right-#{$i} {
+    margin-right: #{$margin * $i} !important;
+  } // 顶部距离
+  .margin-top-#{$i} {
+    margin-top: #{$margin * $i} !important;
+  } // 底部距离
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$margin * $i} !important;
+  }
+  .margin-#{$i} {
+    margin: #{$margin * $i} !important;
+  } // 左边距离
+  .padding-left-#{$i} {
+    padding-left: #{$margin * $i} !important;
+  } // 右边距离
+  .padding-right-#{$i} {
+    padding-right: #{$margin * $i} !important;
+  } // 顶部距离
+  .padding-top-#{$i} {
+    padding-top: #{$margin * $i} !important;
+  } // 底部距离
+  .padding-bottom-#{$i} {
+    padding-bottom: #{$margin * $i} !important;
+  }
+  .padding-#{$i} {
+    padding: #{$margin * $i} !important;
+  }
+}
+
+.border {
+  border: 0px solid $--border-color-base;
+}
+
+.border-top {
+  @extend .border;
+  border-top-width: 1px;
+}
+
+.border-bottom {
+  @extend .border;
+  border-bottom-width: 1px;
+}
+
+.border-left {
+  @extend .border;
+  border-left-width: 1px;
+}
+
+.border-right {
+  @extend .border;
+  border-right-width: 1px;
+}
+
+.border-left-top {
+  @extend .border;
+  @extend .border-left;
+  @extend .border-top;
+}
+
+.border-right-top {
+  @extend .border;
+  @extend .border-right;
+  @extend .border-top;
+}
+
+.border-all {
+  @extend .border;
+  border-width: 1px;
+}
+
+.border-no-left {
+  border-left-width: 0 !important;
+}
+
+.border-no-top {
+  border-top-width: 0 !important;
+}
+
+.border-no-right {
+  border-right-width: 0 !important;
+}
+
+.border-no-bottom {
+  border-bottom-width: 0 !important;
+}
+
+.border-no-all {
+  border-width: 0 !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.full-height {
+  min-height: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.background-no {
+  background-color: transparent;
+}
+
+/* 小样式 */
+
+.symbol {
+  display: inline-block;
+  &.success:before {
+    content: "\2714"; /*✔*/
+  }
+  &.failure:before {
+    content: "\2716"; /*✖*/
+  }
+}
+
+/*鼠标样式*/
+
+.href {
+  cursor: pointer;
+  color: #0788e4;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.removed-line-through {
+  text-decoration: line-through;
+}
+
+/* 自定义树节点 */
+.custom-tree-node {
+  flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-right: 8px;
+}

@@ -1,0 +1,33 @@
+.la-panel {
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 #0000001f, 0 0 6px 0 #0000000a;
+
+  &--full {
+    min-height: 100%;
+  }
+
+  &__buttons {
+    float: right;
+    margin-top: 0px;
+    .el-button {
+      padding: 3px;
+      font-size: 12px;
+    }
+  }
+
+  &__header {
+    background-color: #3784f6;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+    height: $header-height;
+    line-height: $header-height;
+    font-size: 12px;
+    padding: 0 $margin;
+  }
+
+  &__body {
+    padding: $margin;
+  }
+}
