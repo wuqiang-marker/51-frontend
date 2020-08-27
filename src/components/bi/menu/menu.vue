@@ -286,6 +286,9 @@ export default {
   },
   props: ["menuTab"],
   mounted() {},
+
+
+  
   methods: {
     changeMenu(menuIndex) {
       this.menu = menuIndex;

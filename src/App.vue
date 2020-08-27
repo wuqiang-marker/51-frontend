@@ -231,7 +231,7 @@ export default {
         case "OnPOIClick":
           console.log("OnPOIClick_id = " + jsonObject.args.id);
           setTimeout(
-            () => cloudRender.SuperAPI("FocusPOI", jsonObject.args.id, 1000),
+            () => cloudRender.SuperAPI("FocusPOI", jsonObject.args.id, 1500),
             5e2
           );
           // 返回一个点击POI的ID值
